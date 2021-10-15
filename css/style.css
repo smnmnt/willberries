@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1366px;
+    width: 100%;
+    margin:auto;
+}
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section__header {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+.navigation {
+    max-width: 512px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #939699;
+}
+button {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    border:none;
+}
+.header__cart__button {
+    width: 95px;
+    height: 40px;
+    background: url(../img/Cart.svg) #4592FF no-repeat 18px center;
+    color: #fff;
+    padding:10px 20px 10px 48px;
+    border-radius: 20px;
+}
+.section__promo {
+    padding: 90px 43px 110px 0;
+    background: url(../img/SweaterChokerNeck.png) #B4D1E0 no-repeat center right;
+}
+.container__promo {
+    margin-left: 20%;
+    width: 458px;
+}
+.bestseller__button {
+    width: 77px;
+    height: 25px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #fff;
+    background: #3DC47E;
+    padding: 5px 12px 5px 12px;
+}
+.container__promo h2 {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 70px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.container__promo p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #4B5157;
+    margin-bottom: 40px;
+}
+.shopnow__button{
+    display: flex;
+    justify-content: space-between;
+    width: 156px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px 25px;
+    background: #4592FF;
+}
+.shopnow__button p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+}
+.card {
+    border-radius: 10px;
+    height: 370px;
+    display: flex;
+}
+.card_first {
+    
+}
