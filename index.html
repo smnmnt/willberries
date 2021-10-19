@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js" defer></script>
     <title>Willberries</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
             <div class="header__logo__container">
                 <a href="/index.html" class="header__logo"><img src="/img/Willberries.svg" alt="Willberries"></a>
             </div>
-            <nav class="navigation">
+            <nav class="navigation__header">
                 <a href="#" class="navigation__link">Womens</a>
                 <a href="#" class="navigation__link">Mens</a>
                 <a href="#" class="navigation__link">Goods</a>
@@ -40,16 +41,117 @@
     </section>
     <section class="section__cards">
         <div class="container container__cards">
-            <div class="card card_first">
-                <h3 class="card__title">Fashion Month Ready in Capital Shop</h3>
-                <p class="card__desc">Bags & Acsessories & Lingerie & Sportswear &
-                    Beauty & Swimwear</p>
-                <button class="card__button"> View all</button>
+            <div class="card card__first">
+                <h3 class="card__title">Fashion Month <br> Ready in Capital <br> Shop</h3>
+                <p class="card__desc">Sweaters & Hoodies & <br> Puffer Jackets & Coats and <br> Jackets & Knit</p>
+                <button class="card__button button__view__all"> View all</button>
             </div>
             <!-- /.card -->
+            <div class="card card__second">
+                <h3 class="card__title">Catch the Sun: <br> Spring Break Styles <br> From $5.99</h3>
+                <p class="card__desc">Bags & Acsessories & <br> Lingerie & Sportswear & <br>
+                    Beauty & Swimwear</p>
+                <button class="card__button button__view__all"> View all</button>
+            </div>
+            <!-- /.card -->
+            <div class="card card__third">
+                <button class="bestseller__button">Bestseller</button>
+                <h2 class="card__title">Poplin Top <br> With Sleeve Bow</h2>
+                <p class="card__desc__third">Poplin top with roll neckline, long sleeves</p>
+                <button class="shopnow__button">
+                    <p class="price__promo">$129</p>
+                    <p class="shopnow">Shop now</p>
+                </button>
+            </div>
+            <!-- /.card card__third -->
+            <div class="card card__fourth">
+                <h3 class="card__title">Printed Shirt <br> with a Bow</h2>
+                <p class="card__desc">Pink/Sky Blue/Yellow</p>
+                <strong class="price__red__card">$129</strong>
+            </div>
+            <!-- /.card card__forth -->
         </div>
         <!-- /.container container__cards -->
     </section>
     <!-- /.section__cards -->
+    <section class="section__newarrival">
+        <div class="container container__newarrival">
+            <div class="newarrival__title">
+                <h3>New Arrival</h3>
+                <a class="viewall__link" href="#">View All</a>
+            </div>
+            <!-- /.newarrival__title -->
+            <div class="cards__newarrival">
+                <div class="card__newarrival">
+                    <button class="button__new">New</button>
+                     <a href="#" class="wearing__picture__link"><img src="./img/hoodie1.png" alt="hoodie" width="190" height="190"></a>
+                     <a href="#" class="wearing__title__link"><h4>Embroidered Hoodie</h4></a>
+                     <span class="newarrival__desc">Yellow/Lilac/Fuchsia/Orange</span>
+                     <strong class="newarrival__cost">$89</strong>
+                 </div>
+                 <!-- /.card__newarrival -->
+                 <div class="card__newarrival">
+                    <button class="button__new">New</button>
+                     <a href="#" class="wearing__picture__link"><img src="./img/trousers.png" alt="hoodie" width="190" height="190"></a>
+                     <a href="#" class="wearing__title__link"><h4>Faded Beach Trousers</h4></a>
+                     <span class="newarrival__desc">Navy/Ochre/Black/Khaki</span>
+                     <strong class="newarrival__cost">$139</strong>
+                 </div>
+                 <!-- /.card__newarrival -->
+                 <div class="card__newarrival">
+                    <button class="button__new">New</button>
+                     <a href="#" class="wearing__picture__link"><img src="./img/tshirt.png" alt="hoodie" width="190" height="190"></a>
+                     <a href="#" class="wearing__title__link"><h4>Text T-Shirt</h4></a>
+                     <span class="newarrival__desc">White</span>
+                     <strong class="newarrival__cost">$59</strong>
+                 </div>
+                 <!-- /.card__newarrival -->
+                 <div class="card__newarrival">
+                    <button class="button__new">New</button>
+                     <a href="#" class="wearing__picture__link"><img src="./img/shirt.png" alt="hoodie" width="190" height="190"></a>
+                     <a href="#" class="wearing__title__link"><h4>Striped Long Sleeve Shirt</h4></a>
+                     <span class="newarrival__desc">Red/Sky Blue</span>
+                     <strong class="newarrival__cost">$119</strong>
+                 </div>
+                 <!-- /.card__newarrival -->
+            </div>
+        </div>
+    </section>
+    <!-- /.section__newarrival -->
+    <footer class="footer">
+        <div class="container container__footer">
+            <div class="footer__top">
+                <nav class="navigation__footer">
+                    <a href="#" class="navigation__footer__link">Shop</a>
+                    <a href="#" class="navigation__footer__link">About Us</a>
+                    <a href="#" class="navigation__footer__link">Careers</a>
+                    <a href="#" class="navigation__footer__link">FAQ</a>
+                    <a href="#" class="navigation__footer__link">Blog</a>
+                    <a href="#" class="navigation__footer__link">Contacts</a>
+                </nav>
+                <div class="social">
+                    <p class="followus">Follow Us</p>
+                    <a href="#" class="social__link__fb"><img src="./img/Facebook.png" alt="fb" class="social__pic__fb"></a>
+                    <a href="#" class="social__link__tw"><img src="./img/Twitter.png" alt="fb" class="social__pic__tw"></a>
+                    <a href="#" class="social__link__ig"><img src="./img/Instagram.png" alt="fb" class="social__pic__ig"></a>
+                </div>
+                <div class="copyright">
+                    <p class="copyright__text">© 2021 Universal UI Kit</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="paymentsystems">
+                    <img src="./img/visa.png" alt="Visa" width="62" height="19" class="paymentsystems__img">
+                    <img src="./img/mastercard.png" alt="MasterCard" width="38" height="30" class="paymentsystems__img">
+                    <img src="./img/paypal.png" alt="PayPal" width="74" height="19" class="paymentsystems__img">
+                    <img src="./img/bitcoin.png" alt="Bitcoin" width="90" height="19" class="paymentsystems__img">
+                </div>
+                <div class="btt_div">
+                    <p>Top</p>
+                    <button class="back_to_top"></button>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
