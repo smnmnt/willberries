@@ -42,9 +42,17 @@ button {
     outline: none;
     border:none;
 }
+.button__hover {
+    transition: 500ms;
+}
+.button__hover:hover{
+    background-color: #302C34;
+    color: #fff;
+    transition: 500ms;
+    border-radius: 20px;
+}
 .header__cart__button {
-    width: 95px;
-    height: 40px;
+    padding: 10px 20px 10px 48px;
     background: url(../img/Cart.svg) #4592FF no-repeat 18px center;
     color: #fff;
     padding:10px 20px 10px 48px;
@@ -53,7 +61,6 @@ button {
 .section__promo {
     padding: 90px 43px 110px 0;
     background: url(../img/SweaterChokerNeck.png) #B4D1E0 no-repeat center right;
-    
 }
 .container__promo {
     margin-left: 20%;
@@ -61,15 +68,14 @@ button {
     
 }
 .bestseller__button {
-    width: 77px;
-    height: 25px;
+    padding: 5px / 12px;
     border-radius: 3px;
     font-size: 12px;
     color: #fff;
     background: #3DC47E;
     padding: 5px 12px 5px 12px;
 }
-.container__promo h2 {
+.promo__name {
     font-family: Roboto Slab;
     font-style: normal;
     font-weight: bold;
@@ -78,7 +84,7 @@ button {
     margin-top: 20px;
     margin-bottom: 15px;
 }
-.container__promo p {
+.promo__desc {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -88,16 +94,18 @@ button {
 .shopnow__button{
     display: flex;
     justify-content: space-between;
-    width: 156px;
-    height: 40px;
+    max-width: 156px;
+    width: 100%;
+    padding: 10px 25px 10px;
     border-radius: 20px;
-    padding: 10px 25px;
     background: #4592FF;
+    cursor: pointer;
 }
 .shopnow__button p {
     color: #fff;
     font-size: 14px;
     line-height: 20px;
+    margin: 0;
 }
 .section__cards {
     padding-top: 50px;
@@ -107,17 +115,17 @@ button {
     flex-wrap: wrap;
 }
 .card {
-    
     border-radius: 10px;
-    
 }
 .card__first {
-    padding: 60px 296px 80px 46px;
-    width: 563px;
-    background: url(../img/Accessories.png) no-repeat ;
+    max-width: 563px;
+    width: 100%;
+    background: url(../img/Accessories.png) no-repeat center;
+}
+.card__top__padding{
+    padding: 50px 296px 60px 46px;
 }
 .card__first h3 {
-    
     color: #262D33;
     font-family: Roboto Slab;
     font-weight: bold;
@@ -140,17 +148,15 @@ button {
     line-height: 20px;
 }
 .button__view__all {
-    width: 115px;
-    height: 40px;
+    padding: 10px 45px 10px 20px;
     border-radius: 20px;
-    padding-right: 25px;
     background: url(../img/Arrow.svg) no-repeat #4592FF 75px center;
 }
 .card__second {
-    padding: 60px 296px 80px 46px;
     margin-left: 30px;
-    width: 563px;
-    background: url(../img/boots.png) no-repeat ;
+    max-width: 563px;
+    width: 100%;
+    background: url(../img/boots.png) no-repeat center;
     
 }
 .card__second h3 {
@@ -176,7 +182,8 @@ button {
 }
 .card__third h2 {
     margin-top: 30px;
-    width: 418px;
+    max-width: 418px;
+    width: 100%;
     margin-bottom: 20px;
     font-family: Roboto Slab;
     font-style: normal;
@@ -350,4 +357,25 @@ button {
     border: 1px solid #D8BFFF;
     border-radius: 20px;
     background: transparent url(../img/Upper.png) no-repeat center;
+    transition: 500ms;
+}
+.back_to_top:hover {
+    background: transparent url(../img/Upper.png) no-repeat center;
+    background-color: #9f8cd6;
+    color: #fff;
+    transition: 500ms;
+    border-radius: 20px;
+}
+
+@media (max-width:1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media(max-width:1024px){
+    .promo__desc {
+        color: #111314;
+        text-shadow: 0px 0px 2px #ffffff;
+    }
 }
